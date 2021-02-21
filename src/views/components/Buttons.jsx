@@ -1,11 +1,15 @@
 import React from "react";
 import {
   Button,
+  ButtonGroup,
   Card,
   CardBody,
   CardHeader,
   CardTitle,
   Col,
+  Pagination,
+  PaginationItem,
+  PaginationLink,
   Row,
 } from "reactstrap";
 
@@ -91,6 +95,148 @@ const Buttons = (props) => {
               <Button className="btn-link" color="primary">
                 Link
               </Button>
+            </CardBody>
+          </Col>
+        </Row>
+
+        <Row>
+          <Col sm="6">
+            <CardHeader>
+              <CardTitle>Pagination</CardTitle>
+            </CardHeader>
+            <CardBody>
+              <nav aria-label="Page navigation example">
+                <Pagination
+                  className="pagination pagination-warning"
+                  listClassName="pagination-warning"
+                >
+                  <PaginationItem className="active">
+                    <PaginationLink
+                      href="#"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      1
+                    </PaginationLink>
+                  </PaginationItem>
+                  <PaginationItem>
+                    <PaginationLink
+                      href="#"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      2
+                    </PaginationLink>
+                  </PaginationItem>
+                  <PaginationItem>
+                    <PaginationLink
+                      href="#"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      3
+                    </PaginationLink>
+                  </PaginationItem>
+                  <PaginationItem>
+                    <PaginationLink
+                      href="#"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      4
+                    </PaginationLink>
+                  </PaginationItem>
+                  <PaginationItem>
+                    <PaginationLink
+                      href="#"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      5
+                    </PaginationLink>
+                  </PaginationItem>
+                </Pagination>
+                <Pagination>
+                  <PaginationItem>
+                    <PaginationLink
+                      previous
+                      aria-label="Previous"
+                      href="#"
+                      onClick={(e) => e.preventDefault()}
+                    />
+                  </PaginationItem>
+                  <PaginationItem>
+                    <PaginationLink
+                      href="#"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      1
+                    </PaginationLink>
+                  </PaginationItem>
+                  <PaginationItem className="active">
+                    <PaginationLink
+                      href="#"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      2
+                    </PaginationLink>
+                  </PaginationItem>
+                  <PaginationItem>
+                    <PaginationLink
+                      href="#"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      3
+                    </PaginationLink>
+                  </PaginationItem>
+                  <PaginationItem>
+                    <PaginationLink
+                      next
+                      aria-label="Next"
+                      href="#"
+                      onClick={(e) => e.preventDefault()}
+                    />
+                  </PaginationItem>
+                </Pagination>
+              </nav>
+            </CardBody>
+          </Col>
+
+          <Col sm="6">
+            <CardHeader>
+              <CardTitle>Pick your Style</CardTitle>
+            </CardHeader>
+            <CardBody>
+              <ButtonGroup>
+                <Button>Left</Button>
+                <Button>Middle</Button>
+                <Button>Right</Button>
+              </ButtonGroup>
+              <br />
+              <br />
+              <ButtonGroup data-toggle="buttons">
+                <Button className="btn-round" color="primary" type="button">
+                  1
+                </Button>
+                <Button className="btn-round" color="primary" type="button">
+                  2
+                </Button>
+                <Button className="btn-round" color="primary" type="button">
+                  3
+                </Button>
+                <Button className="btn-round" color="primary" type="button">
+                  4
+                </Button>
+              </ButtonGroup>
+              <ButtonGroup>
+                <Button className="btn-round" color="primary" type="button">
+                  5
+                </Button>
+                <Button className="btn-round" color="primary" type="button">
+                  6
+                </Button>
+                <Button className="btn-round" color="primary" type="button">
+                  7
+                </Button>
+                <Button className="btn-round" color="primary" type="button">
+                  8
+                </Button>
+              </ButtonGroup>
             </CardBody>
           </Col>
         </Row>
