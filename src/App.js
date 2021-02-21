@@ -8,12 +8,13 @@ import Notifications from "./views/components/Notifications";
 import Panels from "./views/components/Panels";
 import SweetAlert from "./views/components/SweetAlert";
 import Typography from "./views/components/Typography";
+import buttons from "./playgrounds/buttons";
 
 function App() {
   return (
     <div className="app">
       <Switch>
-        <Route path="/buttons" component={Buttons} />
+        <Route path="/buttons" component={buttons} />
         <Route path="/grid-system" component={GridSystem} />
         <Route path="/panels" component={Panels} />
         <Route path="/sweet-alert" component={SweetAlert} />

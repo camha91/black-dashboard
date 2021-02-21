@@ -9,7 +9,7 @@ import {
   Row,
 } from "reactstrap";
 
-const Buttons = (props) => {
+const Example = (props) => {
   return (
     <div className="content">
       <Card>
@@ -46,4 +46,4 @@ const Buttons = (props) => {
   );
 };
 
-export default Buttons;
+export default Example;
