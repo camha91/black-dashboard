@@ -38,23 +38,23 @@ const Buttons = (props) => {
             </CardHeader>
             <CardBody>
               <Button color="default">
-                <i className="icon-minimal-left" /> Left
+                <i className="fas fa-angle-left" /> Left
               </Button>
               <Button color="default">
-                Right <i className="icon-minimal-right" />
+                Right <i className="fas fa-angle-right" />
               </Button>
               <Button color="success">
-                <i className="icon-check-2" /> Success
+                <i className="fas fa-check" /> Success
               </Button>
               <br />
               <Button color="info">
-                <i className="icon-alert-circle-exc" /> Info
+                <i className="fas fa-info-circle" /> Info
               </Button>
               <Button color="warning">
-                <i className="icon-time-alarm" /> Warning
+                <i className="fas fa-exclamation-triangle" /> Warning
               </Button>
               <Button color="danger">
-                <i className="icon-simple-remove" /> Danger
+                <i className="fas fa-trash" /> Danger
               </Button>
             </CardBody>
           </Col>

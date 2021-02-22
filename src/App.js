@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="app">
       <Switch>
-        <Route path="/buttons" component={buttons} />
+        <Route path="/buttons" component={Buttons} />
         <Route path="/grid-system" component={GridSystem} />
         <Route path="/panels" component={Panels} />
         <Route path="/sweet-alert" component={SweetAlert} />
