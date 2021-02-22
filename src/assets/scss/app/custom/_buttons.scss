@@ -1,0 +1,18 @@
+.btn-primary {
+    @include btn-styles($primary, $primary-states);
+}
+.btn-secondary {
+    @include btn-styles($secondary, $secondary-states);
+}
+.btn-success {
+    @include btn-styles($success, $success-states);
+}
+.btn-info {
+    @include btn-styles($info, $info-states);
+}
+.btn-warning {
+    @include btn-styles($warning, $warning-states);
+}
+.btn-danger {
+    @include btn-styles($danger, $danger-states);
+}

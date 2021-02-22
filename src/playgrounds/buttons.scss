@@ -1,0 +1,39 @@
+@mixin btn-styles($btn-color, $btn-states-color) {
+    background-color: $btn-color;
+    transition: all 0.15s ease;
+    box-shadow: none;
+}
+
+$primary: #1c2d8f !default;
+$secondary: #df60ce !default;
+$success: #1b7e0e !default;
+$info: #1a74ce !default;
+$warning: #d8bc40 !default;
+$danger: #ce2626 !default;
+
+// gradient
+$primary-states: #549ff5 !default;
+$secondary-states: #f554e0 !default;
+$success-states: #00f0bc !default;
+$info-states: #516bd4 !default;
+$warning-states: #d3c790 !default;
+$danger-states: #b8594e !default;
+
+.btn-primary {
+    @include btn-styles($primary, $primary-states);
+}
+.btn-secondary {
+    @include btn-styles($secondary, $secondary-states);
+}
+.btn-success {
+    @include btn-styles($success, $success-states);
+}
+.btn-info {
+    @include btn-styles($info, $info-states);
+}
+.btn-warning {
+    @include btn-styles($warning, $warning-states);
+}
+.btn-danger {
+    @include btn-styles($danger, $danger-states);
+}

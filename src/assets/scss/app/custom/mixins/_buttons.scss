@@ -1,0 +1,5 @@
+@mixin btn-styles($btn-color, $btn-states-color) {
+    background-color: $btn-color;
+    transition: all 0.15s ease;
+    box-shadow: none;
+}
