@@ -44,17 +44,17 @@ const Buttons = (props) => {
                 Right <i className="icon-minimal-right" />
               </Button>
               <Button color="success">
-                <i className="tim-icons icon-check-2" /> Success
+                <i className="icon-check-2" /> Success
               </Button>
               <br />
               <Button color="info">
-                <i className="tim-icons icon-alert-circle-exc" /> Info
+                <i className="icon-alert-circle-exc" /> Info
               </Button>
               <Button color="warning">
-                <i className="tim-icons icon-time-alarm" /> Warning
+                <i className="icon-time-alarm" /> Warning
               </Button>
               <Button color="danger">
-                <i className="tim-icons icon-simple-remove" /> Danger
+                <i className="icon-simple-remove" /> Danger
               </Button>
             </CardBody>
           </Col>

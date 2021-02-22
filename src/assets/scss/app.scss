@@ -8,3 +8,16 @@
 
 @import "app/custom/mixins";
 @import "~bootstrap/scss/mixins";
+
+// Font-awesome
+@import "app/font-awesome/style.scss";
+
+// Bootstrap components
+
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/button-group";
+@import "~bootstrap/scss/card";
+@import "~bootstrap/scss/pagination";
+
+// Custom components
+@import "app/custom/buttons.scss";

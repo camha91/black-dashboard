@@ -1,12 +1,3 @@
-// {
-//   "compilerOptions": {
-//     "baseUrl": "src",
-//     "paths": {
-//       "*": ["src/*"]
-//     }
-//   }
-// }
-
 {
   "compilerOptions": {
     "module": "commonjs",
