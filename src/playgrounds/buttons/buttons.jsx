@@ -76,20 +76,20 @@ const Example = (props) => {
               <CardTitle>Pick your Style</CardTitle>
             </CardHeader>
             <CardBody>
-              <Button color="primary">Default</Button>
-              <Button className="btn-round" color="primary">
+              <Button color="secondary">Default</Button>
+              <Button className="btn-round" color="secondary">
                 Round
               </Button>
-              <Button className="btn-round" color="primary">
-                <i className="icon-heart-2" /> with icon
+              <Button className="btn-round" color="secondary">
+                <i className="fas fa-heart" /> with icon
               </Button>
-              <Button className="btn-round btn-icon" color="primary">
-                <i className="icon-heart-2" /> Heart icon
+              <Button className="btn-round btn-icon" color="secondary">
+                <i className="fas fa-heart" />
               </Button>
-              <Button className="btn-simple" color="primary">
+              <Button className="btn-simple" color="secondary">
                 Simple
               </Button>
-              <Button className="btn-link" color="primary">
+              <Button className="btn-link" color="secondary">
                 Link
               </Button>
             </CardBody>
