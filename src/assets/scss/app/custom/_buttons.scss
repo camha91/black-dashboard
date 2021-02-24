@@ -1,18 +1,93 @@
+.btn {
+  border-width: $border-thick;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  margin: 5px 3px;
+  border-radius: $border-radius-lg;
+  cursor: pointer;
+
+  @include btn-styles($default, $default-states);
+
+  &.btn-icon {
+    height: $icon-size-regular;
+    min-width: $icon-size-regular;
+    width: $icon-size-regular;
+    padding: 0;
+    font-size: $icon-font-size-regular;
+    overflow: hidden;
+    position: relative;
+    line-height: normal;
+  }
+}
+
 .btn-primary {
-    @include btn-styles($primary, $primary-states);
+  @include btn-styles($primary, $primary-states);
 }
 .btn-secondary {
-    @include btn-styles($secondary, $secondary-states);
+  @include btn-styles($secondary, $secondary-states);
 }
 .btn-success {
-    @include btn-styles($success, $success-states);
+  @include btn-styles($success, $success-states);
 }
 .btn-info {
-    @include btn-styles($info, $info-states);
+  @include btn-styles($info, $info-states);
 }
 .btn-warning {
-    @include btn-styles($warning, $warning-states);
+  @include btn-styles($warning, $warning-states);
 }
 .btn-danger {
-    @include btn-styles($danger, $danger-states);
+  @include btn-styles($danger, $danger-states);
+}
+.btn-neutral {
+  @include btn-styles($white, $white);
+}
+
+.btn {
+  &:disabled,
+  &[disabled],
+  &.disabled {
+    @include opacity(0.5);
+    pointer-events: none;
+  }
+}
+
+.btn-lg {
+  @include btn-size(
+    $btn-padding-y-lg,
+    $btn-padding-x-lg,
+    $font-size-base,
+    $border-radius-lg
+  );
+}
+
+.btn-sm {
+  @include btn-size(
+    $btn-padding-y-sm,
+    $btn-padding-x-sm,
+    $font-size-base,
+    $border-radius-sm
+  );
+}
+
+.btn-round {
+  border-width: $border-thin;
+  border-radius: $btn-round-radius;
+}
+
+.btn-simple {
+  border: $border;
+  border-color: $default;
+  box-shadow: none;
+  padding: $padding-btn-vertical - 1 $padding-round-horizontal - 1;
+  background-color: $transparent-bg;
+}
+
+.btn-link {
+  border: $none;
+  box-shadow: none;
+  padding: $padding-base-vertical $padding-base-horizontal;
+  background: $transparent-bg;
+  color: $pink-100;
+  font-weight: $font-weight-bold;
 }

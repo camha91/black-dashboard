@@ -2,6 +2,132 @@
   background-color: $btn-color;
   transition: all 0.15s ease;
   box-shadow: none;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  &:active:focus,
+  &:active:hover,
+  &.active:focus,
+  &.active:hover {
+    background-color: $btn-states-color !important;
+    background-image: linear-gradient(
+      to bottom left,
+      $btn-color,
+      $btn-states-color,
+      $btn-color
+    ) !important;
+    background-image: -webkit-linear-gradient(
+      to bottom left,
+      $btn-color,
+      $btn-states-color,
+      $btn-color
+    ) !important;
+    background-image: -o-linear-gradient(
+      to bottom left,
+      $btn-color,
+      $btn-states-color,
+      $btn-color
+    ) !important;
+    background-image: -moz-linear-gradient(
+      to bottom left,
+      $btn-color,
+      $btn-states-color,
+      $btn-color
+    ) !important;
+    color: $white;
+    box-shadow: none;
+  }
+
+  &:active {
+    box-shadow: none !important;
+    transform: translateY(3px) !important;
+    transition: all 0.5s ease;
+  }
+
+  &:not([data-action]):hover {
+    box-shadow: 2px 2px 6px rgba(182, 23, 23, 0.4);
+    transform: translateY(-3px);
+    -webkit-transform: translateY(-3px);
+  }
+
+  &.disabled,
+  &:disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+      background-color: $btn-color;
+      border-color: $btn-color;
+    }
+  }
+
+  // btn-neutral style
+  @if $btn-color == $white {
+    color: $secondary;
+
+    &.btn-danger {
+      color: $danger;
+
+      &:hover,
+      &:focus,
+      &:active,
+      &:active:focus {
+        color: $danger-states;
+      }
+    }
+
+    &.btn-info {
+      color: $info;
+
+      &:hover,
+      &:focus,
+      &:active,
+      &:active:focus {
+        color: $info-states;
+      }
+    }
+
+    &.btn-warning {
+      color: $warning;
+
+      &:hover,
+      &:focus,
+      &:active,
+      &:active:focus {
+        color: $warning-states;
+      }
+    }
+
+    &.btn-success {
+      color: $success;
+
+      &:hover,
+      &:focus,
+      &:active,
+      &:active:focus {
+        color: $success-states;
+      }
+    }
+
+    &.btn-default {
+      color: $default;
+
+      &:hover,
+      &:focus,
+      &:active,
+      &:active:focus {
+        color: $default-states;
+      }
+    }
+  } @else {
+    color: $white;
+  }
 }
 
 // Button sizes
@@ -13,6 +139,13 @@
   &.btn-simple {
     padding: $padding-vertical - 1 $padding-horizontal - 1;
   }
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  // IE8 filter
+  $opacity-ie: ($opacity * 100);
+  filter: #{alpha(opacity=$opacity-ie)};
 }
 
 $default: #3e4d72 !default;
@@ -116,6 +249,15 @@ $icon-font-size-regular: 1rem !default;
 }
 .btn-neutral {
   @include btn-styles($white, $white);
+}
+
+.btn {
+  &:disabled,
+  &[disabled],
+  &.disabled {
+    @include opacity(0.5);
+    pointer-events: none;
+  }
 }
 
 .btn-lg {

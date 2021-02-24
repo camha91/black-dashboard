@@ -79,20 +79,20 @@ const Buttons = (props) => {
               <CardTitle>Pick your Style</CardTitle>
             </CardHeader>
             <CardBody>
-              <Button color="primary">Default</Button>
-              <Button className="btn-round" color="primary">
+              <Button color="secondary">Default</Button>
+              <Button className="btn-round" color="secondary">
                 Round
               </Button>
-              <Button className="btn-round" color="primary">
-                <i className="icon-heart-2" /> with icon
+              <Button className="btn-round" color="secondary">
+                <i className="fas fa-heart" /> with icon
               </Button>
-              <Button className="btn-round btn-icon" color="primary">
-                <i className="icon-heart-2" /> Heart icon
+              <Button className="btn-round btn-icon" color="secondary">
+                <i className="fas fa-heart" />
               </Button>
-              <Button className="btn-simple" color="primary">
+              <Button className="btn-simple" color="secondary">
                 Simple
               </Button>
-              <Button className="btn-link" color="primary">
+              <Button className="btn-link" color="secondary">
                 Link
               </Button>
             </CardBody>
@@ -210,30 +210,30 @@ const Buttons = (props) => {
               <br />
               <br />
               <ButtonGroup data-toggle="buttons">
-                <Button className="btn-round" color="primary" type="button">
+                <Button className="btn-round" color="info" type="button">
                   1
                 </Button>
-                <Button className="btn-round" color="primary" type="button">
+                <Button className="btn-round" color="info" type="button">
                   2
                 </Button>
-                <Button className="btn-round" color="primary" type="button">
+                <Button className="btn-round" color="info" type="button">
                   3
                 </Button>
-                <Button className="btn-round" color="primary" type="button">
+                <Button className="btn-round" color="info" type="button">
                   4
                 </Button>
               </ButtonGroup>
               <ButtonGroup>
-                <Button className="btn-round" color="primary" type="button">
+                <Button className="btn-round" color="info" type="button">
                   5
                 </Button>
-                <Button className="btn-round" color="primary" type="button">
+                <Button className="btn-round" color="info" type="button">
                   6
                 </Button>
-                <Button className="btn-round" color="primary" type="button">
+                <Button className="btn-round" color="info" type="button">
                   7
                 </Button>
-                <Button className="btn-round" color="primary" type="button">
+                <Button className="btn-round" color="info" type="button">
                   8
                 </Button>
               </ButtonGroup>
