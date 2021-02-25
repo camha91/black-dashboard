@@ -269,6 +269,33 @@ const Buttons = (props) => {
         </Row>
         <Row>
           <Col md="4" sm="5">
+            <Button color="instagram">
+              <i className="fab fa-instagram-square" /> Likes · 2702
+            </Button>
+          </Col>
+          <Col md="1" sm="1">
+            <Button className="btn-icon" color="instagram">
+              <i className="fab fa-instagram" />
+            </Button>
+          </Col>
+          <Col md="1" sm="1">
+            <Button className="btn-icon btn-round" color="instagram">
+              <i className="fab fa-instagram" />
+            </Button>
+          </Col>
+          <Col md="1" sm="1">
+            <Button className="btn-icon btn-simple" color="instagram">
+              <i className="fab fa-instagram-square" />
+            </Button>
+          </Col>
+          <Col md="3" sm="4">
+            <Button className="btn-simple" color="instagram">
+              <i className="fab fa-instagram-square" /> Likes · 2702
+            </Button>
+          </Col>
+        </Row>
+        <Row>
+          <Col md="4" sm="5">
             <Button color="google">
               <i className="fab fa-google-plus-g" /> Share on Google+
             </Button>
@@ -296,33 +323,6 @@ const Buttons = (props) => {
         </Row>
         <Row>
           <Col md="4" sm="5">
-            <Button color="linkedin">
-              <i className="fab fa-linkedin" /> Connect with Linkedin
-            </Button>
-          </Col>
-          <Col md="1" sm="1">
-            <Button className="btn-icon" color="linkedin">
-              <i className="fab fa-linkedin" />
-            </Button>
-          </Col>
-          <Col md="1" sm="1">
-            <Button className="btn-icon btn-round" color="linkedin">
-              <i className="fab fa-linkedin" />
-            </Button>
-          </Col>
-          <Col md="1" sm="1">
-            <Button className="btn-icon btn-simple" color="linkedin">
-              <i className="fab fa-linkedin" />
-            </Button>
-          </Col>
-          <Col md="3" sm="4">
-            <Button className="btn-simple" color="linkedin">
-              <i className="fab fa-linkedin" /> Connect with Linkedin
-            </Button>
-          </Col>
-        </Row>
-        <Row>
-          <Col md="4" sm="5">
             <Button color="pinterest">
               <i className="fab fa-pinterest" /> Pint it · 102
             </Button>
@@ -345,6 +345,65 @@ const Buttons = (props) => {
           <Col md="3" sm="4">
             <Button className="btn-simple" color="pinterest">
               <i className="fab fa-pinterest" /> Pint it · 102
+            </Button>
+          </Col>
+        </Row>
+        <Row>
+          <Col md="4" sm="5">
+            <p className="category">Default</p>
+            <Button color="twitter">
+              <i className="fab fa-twitter" /> Connect with Twitter
+            </Button>
+          </Col>
+          <Col md="1" sm="1">
+            <p className="category"> </p>
+            <Button className="btn-icon" color="twitter">
+              <i className="fab fa-twitter" />
+            </Button>
+          </Col>
+          <Col md="1" sm="1">
+            <p className="category"> </p>
+            <Button className="btn-icon btn-round" color="twitter">
+              <i className="fab fa-twitter" />
+            </Button>
+          </Col>
+          <Col md="1" sm="1">
+            <p className="category">Neutral</p>
+            <Button className="btn-icon btn-simple" color="twitter">
+              <i className="fab fa-twitter" />
+            </Button>
+          </Col>
+          <Col md="3" sm="4">
+            <p className="category"> </p>
+            <Button className="btn-simple" color="twitter">
+              <i className="fab fa-twitter" /> Connect with Twitter
+            </Button>
+          </Col>
+        </Row>
+        <Row>
+          <Col md="4" sm="5">
+            <Button color="linkedin">
+              <i className="fab fa-linkedin" /> Connect with Linkedin
+            </Button>
+          </Col>
+          <Col md="1" sm="1">
+            <Button className="btn-icon" color="linkedin">
+              <i className="fab fa-linkedin" />
+            </Button>
+          </Col>
+          <Col md="1" sm="1">
+            <Button className="btn-icon btn-round" color="linkedin">
+              <i className="fab fa-linkedin" />
+            </Button>
+          </Col>
+          <Col md="1" sm="1">
+            <Button className="btn-icon btn-simple" color="linkedin">
+              <i className="fab fa-linkedin" />
+            </Button>
+          </Col>
+          <Col md="3" sm="4">
+            <Button className="btn-simple" color="linkedin">
+              <i className="fab fa-linkedin" /> Connect with Linkedin
             </Button>
           </Col>
         </Row>

@@ -1,34 +1,62 @@
 import React from "react";
 import { Col, Button, Row } from "reactstrap";
+import "../buttons.scss";
 
 const socialButton = () => {
   return (
+    // <Row>
+    //   <Col md="4" sm="5">
+    //     <Button color="facebook">
+    //       <i className="fab fa-facebook-square" /> Share · 2.2k
+    //     </Button>
+    //   </Col>
+    //   <Col md="1" sm="1">
+    //     <Button className="btn-icon" color="facebook">
+    //       <i className="fab fa-facebook-f" />
+    //     </Button>
+    //   </Col>
+    //   <Col md="1" sm="1">
+    //     <Button className="btn-icon btn-round" color="facebook">
+    //       <i className="fab fa-facebook-f" />
+    //     </Button>
+    //   </Col>
+    //   <Col md="1" sm="1">
+    //     <Button className="btn-icon btn-simple" color="facebook">
+    //       <i className="fab fa-facebook-square" />
+    //     </Button>
+    //   </Col>
+    //   <Col md="3" sm="4">
+    //     <Button className="btn-simple" color="facebook">
+    //       <i className="fab fa-facebook-square" /> Share · 2.2k
+    //     </Button>
+    //   </Col>
+    // </Row>
     <Row>
       <Col md="4" sm="5">
-        <Button color="facebook">
-          <i className="fab fa-facebook-square" /> Share · 2.2k
+        <Button color="instagram">
+          <i className="fab fa-instagram-square" /> Likes · 2702
         </Button>
       </Col>
-      {/* <Col md="1" sm="1">
-        <Button className="btn-icon" color="facebook">
-            <i className="fab fa-facebook-f" />
+      <Col md="1" sm="1">
+        <Button className="btn-icon" color="instagram">
+          <i className="fab fa-instagram" />
         </Button>
-        </Col>
-        <Col md="1" sm="1">
-        <Button className="btn-icon btn-round" color="facebook">
-            <i className="fab fa-facebook-f" />
+      </Col>
+      <Col md="1" sm="1">
+        <Button className="btn-icon btn-round" color="instagram">
+          <i className="fab fa-instagram" />
         </Button>
-        </Col>
-        <Col md="1" sm="1">
-        <Button className="btn-icon btn-simple" color="facebook">
-            <i className="fab fa-facebook-square" />
+      </Col>
+      <Col md="1" sm="1">
+        <Button className="btn-icon btn-simple" color="instagram">
+          <i className="fab fa-instagram-square" />
         </Button>
-        </Col>
-        <Col md="3" sm="4">
-        <Button className="btn-simple" color="facebook">
-            <i className="fab fa-facebook-square" /> Share · 2.2k
+      </Col>
+      <Col md="3" sm="4">
+        <Button className="btn-simple" color="instagram">
+          <i className="fab fa-instagram-square" /> Likes · 2702
         </Button>
-        </Col> */}
+      </Col>
     </Row>
     // <Row>
     //     <Col md="4" sm="5">

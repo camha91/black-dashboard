@@ -91,3 +91,65 @@
   color: $pink-100;
   font-weight: $font-weight-bold;
 }
+
+// buttonGroup
+.btn-group.select {
+  width: 100%;
+}
+
+.btn-group {
+  .btn.active {
+    box-shadow: 2px 2px 6px rgba(221, 37, 31, 0.4);
+    transform: translateY(-2px);
+    -webkit-transform: translateY(-10px);
+  }
+
+  label.btn.active {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+  }
+}
+
+.btn-group.select .btn {
+  text-align: left;
+}
+
+.btn {
+  // social buttons
+  &.btn-facebook {
+    @include social-buttons-color($facebook, $facebook-states);
+  }
+  &.btn-instagram {
+    @include social-buttons-color($instagram, $instagram-states);
+  }
+  &.btn-google {
+    @include social-buttons-color($google-plus, $google-plus-states);
+  }
+  &.btn-pinterest {
+    @include social-buttons-color($pinterest, $pinterest-states);
+  }
+  &.btn-twitter {
+    @include social-buttons-color($twitter, $twitter-states);
+  }
+  &.btn-linkedin {
+    @include social-buttons-color($linkedin, $linkedin-states);
+  }
+  &.btn-youtube {
+    @include social-buttons-color($youtube, $youtube-states);
+  }
+  &.btn-tumblr {
+    @include social-buttons-color($tumblr, $tumblr-states);
+  }
+  &.btn-github {
+    @include social-buttons-color($github, $github-states);
+  }
+  &.btn-dribbble {
+    @include social-buttons-color($dribbble, $dribbble-states);
+  }
+  &.btn-behance {
+    @include social-buttons-color($behance, $behance-states);
+  }
+  &.btn-reddit {
+    @include social-buttons-color($reddit, $reddit-states);
+  }
+}

@@ -63,3 +63,29 @@ $icon-font-size-regular: 1rem !default;
 
 // Brand colors
 $brand-primary: $primary !default;
+
+// Social buttons colors
+$facebook: #3f5c99 !default;
+$facebook-states: darken($facebook, 5%) !default;
+$instagram: #df5495 !default;
+$instagram-states: lighten($instagram, 6%) !default;
+$google-plus: #f14b4b !default;
+$google-plus-states: lighten($google-plus, 10%) !default;
+$pinterest: #c9171d !default;
+$pinterest-states: lighten($pinterest, 10%) !default;
+$twitter: #55acee !default;
+$twitter-states: darken($twitter, 5%) !default;
+$linkedin: #0582c5 !default;
+$linkedin-states: darken($linkedin, 5%) !default;
+$youtube: #d42e29 !default;
+$youtube-states: lighten($youtube, 6%) !default;
+$tumblr: #35465c !default;
+$tumblr-states: lighten($tumblr, 6%) !default;
+$github: #333333 !default;
+$github-states: #ccc !default;
+$behance: #1769ff !default;
+$behance-states: lighten($behance, 6%) !default;
+$dribbble: #ec5a92 !default;
+$dribbble-states: lighten($dribbble, 6%) !default;
+$reddit: #ff4500 !default;
+$reddit-states: lighten($reddit, 6%) !default;

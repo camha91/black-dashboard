@@ -182,6 +182,73 @@
   }
 }
 
+// Social buttons
+@mixin social-buttons-color($color, $state-color) {
+  @include diagonal-gradient($color, darken($color, 20%));
+  //background-color: $color;
+  color: $white;
+  background-size: 210% 210%;
+  background-position: top right;
+  background-repeat: space;
+
+  &:focus,
+  &:active,
+  &:hover {
+    background-color: $state-color;
+    background-image: linear-gradient(
+      to bottom left,
+      $color,
+      darken($color, 20%),
+      $color
+    ) !important;
+    background-image: -webkit-linear-gradient(
+      to bottom left,
+      $color,
+      darken($color, 20%),
+      $color
+    ) !important;
+    background-image: -o-linear-gradient(
+      to bottom left,
+      $color,
+      darken($color, 20%),
+      $color
+    ) !important;
+    background-image: -moz-linear-gradient(
+      to bottom left,
+      $color,
+      darken($color, 20%),
+      $color
+    ) !important;
+    color: $white;
+  }
+
+  &.btn-simple {
+    color: $state-color;
+    background-color: $transparent-bg;
+    background-image: none !important;
+    box-shadow: none;
+    border-color: $state-color;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $state-color;
+      border-color: $state-color;
+    }
+  }
+
+  &.btn-neutral {
+    color: $color;
+    background-color: $white;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $state-color;
+    }
+  }
+}
+
 // opacity mixin
 @mixin opacity($opacity) {
   opacity: $opacity;
@@ -256,6 +323,32 @@ $icon-font-size-regular: 1rem !default;
 
 // Brand colors
 $brand-primary: $primary !default;
+
+// Social buttons colors
+$facebook: #3f5c99 !default;
+$facebook-states: darken($facebook, 5%) !default;
+$instagram: #bd457d !default;
+$instagram-states: lighten($instagram, 6%) !default;
+$google-plus: #ca3b3b !default;
+$google-plus-states: darken($google-plus, 5%) !default;
+$pinterest: #c9171d !default;
+$pinterest-states: lighten($pinterest, 6%) !default;
+$twitter: #55acee !default;
+$twitter-states: darken($twitter, 5%) !default;
+$linkedin: #0582c5 !default;
+$linkedin-states: darken($linkedin, 5%) !default;
+$youtube: #bd1812 !default;
+$youtube-states: lighten($youtube, 6%) !default;
+$tumblr: #35465c !default;
+$tumblr-states: lighten($tumblr, 6%) !default;
+$github: #333333 !default;
+$github-states: #ccc !default;
+$behance: #1769ff !default;
+$behance-states: lighten($behance, 6%) !default;
+$dribbble: #ec5a92 !default;
+$dribbble-states: lighten($dribbble, 6%) !default;
+$reddit: #ff4500 !default;
+$reddit-states: lighten($reddit, 6%) !default;
 
 // buttons.scss
 .btn {
@@ -350,6 +443,68 @@ $brand-primary: $primary !default;
   background: $transparent-bg;
   color: $pink-100;
   font-weight: $font-weight-bold;
+}
+
+// buttonGroup
+.btn-group.select {
+  width: 100%;
+}
+
+.btn-group {
+  .btn.active {
+    box-shadow: 2px 2px 6px rgba(196, 48, 48, 0.4);
+    transform: translateY(-2px);
+    -webkit-transform: translateY(-10px);
+  }
+
+  label.btn.active {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+  }
+}
+
+.btn {
+  // social buttons
+  &.btn-facebook {
+    @include social-buttons-color($facebook, $facebook-states);
+  }
+  &.btn-instagram {
+    @include social-buttons-color($instagram, $instagram-states);
+  }
+  &.btn-google {
+    @include social-buttons-color($google-plus, $google-plus-states);
+  }
+  &.btn-pinterest {
+    @include social-buttons-color($pinterest, $pinterest-states);
+  }
+  &.btn-twitter {
+    @include social-buttons-color($twitter, $twitter-states);
+  }
+  &.btn-linkedin {
+    @include social-buttons-color($linkedin, $linkedin-states);
+  }
+  &.btn-youtube {
+    @include social-buttons-color($youtube, $youtube-states);
+  }
+  &.btn-tumblr {
+    @include social-buttons-color($tumblr, $tumblr-states);
+  }
+  &.btn-github {
+    @include social-buttons-color($github, $github-states);
+  }
+  &.btn-dribbble {
+    @include social-buttons-color($dribbble, $dribbble-states);
+  }
+  &.btn-behance {
+    @include social-buttons-color($behance, $behance-states);
+  }
+  &.btn-reddit {
+    @include social-buttons-color($reddit, $reddit-states);
+  }
+}
+
+.btn-group.select .btn {
+  text-align: left;
 }
 
 // pagination.scss
