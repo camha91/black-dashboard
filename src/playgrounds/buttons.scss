@@ -1,4 +1,45 @@
+// vendor-prefixes mixin
+@mixin diagonal-gradient($start-color, $end-color) {
+  background: $start-color;
+  background-image: -webkit-linear-gradient(
+    to bottom left,
+    $start-color,
+    $end-color,
+    $start-color
+  );
+  background-image: -o-linear-gradient(
+    to bottom left,
+    $start-color,
+    $end-color,
+    $start-color
+  );
+  background-image: -moz-linear-gradient(
+    to bottom left,
+    $start-color,
+    $end-color,
+    $start-color
+  );
+  background-image: linear-gradient(
+    to bottom left,
+    $start-color,
+    $end-color,
+    $start-color
+  );
+  background-size: 210% 210%;
+  background-position: top right;
+}
+
+@mixin linear-gradient($color, $states-color) {
+  background: $color;
+  background: -webkit-linear-gradient(0deg, $color 0%, $states-color 100%);
+  background: -o-linear-gradient(0deg, $color 0%, $states-color 100%);
+  background: -moz-linear-gradient(0deg, $color 0%, $states-color 100%);
+  background: linear-gradient(0deg, $color 0%, $states-color 100%);
+}
+
+// buttons mixin
 @mixin btn-styles($btn-color, $btn-states-color) {
+  @include diagonal-gradient($btn-color, $btn-states-color);
   background-color: $btn-color;
   transition: all 0.15s ease;
   box-shadow: none;
@@ -141,6 +182,7 @@
   }
 }
 
+// opacity mixin
 @mixin opacity($opacity) {
   opacity: $opacity;
   // IE8 filter
@@ -148,6 +190,7 @@
   filter: #{alpha(opacity=$opacity-ie)};
 }
 
+// variables
 $default: #3e4d72 !default;
 $primary: #1c2d8f !default;
 $secondary: #df60ce !default;
@@ -173,6 +216,8 @@ $border-radius-lg: 0.4285rem !default;
 $border-radius-sm: 0.2857rem !default;
 $border: 0.5px solid !default;
 
+$box-shadow: 0 15px 35px rgba(80, 218, 195, 0.1), 0 5px 15px rgba(5, 5, 5, 0.07);
+
 // Buttons
 $btn-padding-y-sm: 5px !default;
 $btn-padding-x-sm: 20px !default;
@@ -194,6 +239,9 @@ $padding-base-horizontal: 0.7rem !default;
 $transparent-bg: transparent !default;
 $white: #ffffff !default;
 $pink-100: #ebbbdf !default;
+$pink-600: #da50b0 !default;
+
+$opacity-1: rgba(255, 255, 255, 0.2) !default;
 
 // Fonts
 $font-size-dash: 0.875rem !default;
@@ -206,6 +254,10 @@ $font-weight-bold: 600 !default;
 $icon-size-regular: 2.375rem !default;
 $icon-font-size-regular: 1rem !default;
 
+// Brand colors
+$brand-primary: $primary !default;
+
+// buttons.scss
 .btn {
   border-width: $border-thick;
   border: none;
@@ -298,4 +350,89 @@ $icon-font-size-regular: 1rem !default;
   background: $transparent-bg;
   color: $pink-100;
   font-weight: $font-weight-bold;
+}
+
+// pagination.scss
+.pagination {
+  .page-item .page-link {
+    border: 0;
+    border-radius: 40px !important;
+    transition: all 0.5s;
+    margin: 0 5px;
+    min-width: 20px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+
+    &:hover,
+    &:focus {
+      background-color: rgba($pink-600, 0.1);
+      color: $pink-600;
+      border: none;
+      box-shadow: none;
+    }
+  }
+
+  .page-item.active > .page-link {
+    color: $pink-600;
+    box-shadow: $box-shadow;
+
+    &,
+    &:focus,
+    &:hover {
+      @include diagonal-gradient($success, $success-states);
+
+      color: $pink-600;
+    }
+  }
+
+  .page-item.disabled > .page-link {
+    opacity: 0.5;
+  }
+
+  // Colors
+  &.pagination-info {
+    .page-item.active > .page-link {
+      &,
+      &:focus,
+      &:hover {
+        @include diagonal-gradient($info, $info-states);
+      }
+    }
+  }
+
+  &.pagination-success {
+    .page-item.active > .page-link {
+      &,
+      &:focus,
+      &:hover {
+        @include diagonal-gradient($success, $success-states);
+      }
+    }
+  }
+
+  &.pagination-neutral {
+    .page-item > .page-link {
+      color: $white;
+
+      &:focus,
+      &:hover {
+        background-color: $opacity-1;
+        color: $white;
+      }
+    }
+
+    .page-item.active > .page-link {
+      &,
+      &:focus,
+      &:hover {
+        background-color: $white;
+        border-color: $white;
+        color: $brand-primary;
+      }
+    }
+  }
 }

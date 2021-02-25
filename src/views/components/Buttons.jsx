@@ -107,8 +107,8 @@ const Buttons = (props) => {
             <CardBody>
               <nav aria-label="Page navigation example">
                 <Pagination
-                  className="pagination pagination-warning"
-                  listClassName="pagination-warning"
+                  className="pagination pagination-info"
+                  listClassName="pagination-info"
                 >
                   <PaginationItem className="active">
                     <PaginationLink

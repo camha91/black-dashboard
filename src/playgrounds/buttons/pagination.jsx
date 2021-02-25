@@ -1,12 +1,13 @@
 import React from "react";
 import { Pagination, PaginationItem, PaginationLink } from "reactstrap";
+import "../buttons.scss";
 
 const Example = (props) => {
   return (
     <nav aria-label="Page navigation example">
       <Pagination
-        className="pagination pagination-warning"
-        listClassName="pagination-warning"
+        className="pagination pagination-info"
+        listClassName="pagination-info"
       >
         <PaginationItem className="active">
           <PaginationLink href="#" onClick={(e) => e.preventDefault()}>

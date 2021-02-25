@@ -2,7 +2,7 @@ import { Route, Switch } from "react-router-dom";
 import "./App.scss";
 import "./assets/scss/app.scss";
 import Sidebar from "./components/Sidebar";
-import buttons from "./playgrounds/buttons/buttons";
+import pagination from "./playgrounds/buttons/pagination";
 import GridSystem from "./views/components/GridSystem";
 import Icons from "./views/components/Icons";
 import Notifications from "./views/components/Notifications";

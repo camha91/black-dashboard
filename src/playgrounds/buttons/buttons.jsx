@@ -8,7 +8,7 @@ import {
   Col,
   Row,
 } from "reactstrap";
-import "../../playgrounds/buttons.scss";
+import "../buttons.scss";
 
 const Example = (props) => {
   return (
