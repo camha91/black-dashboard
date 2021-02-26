@@ -1,0 +1,95 @@
+$default: #3e4d72 !default;
+$primary: #1c2d8f !default;
+$secondary: #df60ce !default;
+$success: #1b7e0e !default;
+$info: #1a74ce !default;
+$warning: #d8bc40 !default;
+$danger: #ce2626 !default;
+
+// Gradient
+$default-states: #2f3c58 !default;
+$primary-states: #549ff5 !default;
+$secondary-states: #f554e0 !default;
+$success-states: #00f0bc !default;
+$info-states: #516bd4 !default;
+$warning-states: #d3c790 !default;
+$danger-states: #b8594e !default;
+
+// Border
+$none: 0 !default;
+$border-thin: 1px !default;
+$border-thick: 2px !default;
+$border-radius-lg: 0.4285rem !default;
+$border-radius-sm: 0.2857rem !default;
+$border: 0.5px solid !default;
+
+$box-shadow: 0 15px 35px rgba(80, 218, 195, 0.1), 0 5px 15px rgba(5, 5, 5, 0.07);
+
+// Buttons
+$btn-padding-y-sm: 5px !default;
+$btn-padding-x-sm: 20px !default;
+
+$btn-padding-y-lg: 15px !default;
+$btn-padding-x-lg: 40px !default;
+
+$btn-round-radius: 25px !default;
+
+// Spacing
+$padding-btn-vertical: 8px !default;
+
+$padding-round-horizontal: 22px !default;
+
+$padding-base-vertical: 0.5rem !default;
+$padding-base-horizontal: 0.7rem !default;
+
+// Color system
+$transparent-bg: transparent !default;
+$white: #ffffff !default;
+$pink-100: #ebbbdf !default;
+$pink-600: #da50b0 !default;
+
+$opacity-1: rgba(255, 255, 255, 0.2) !default;
+
+// Fonts
+$font-size-dash: 0.875rem !default;
+
+$font-size-base: $font-size-dash !default;
+
+$font-weight-bold: 600 !default;
+
+// Icons
+$icon-size-regular: 2.375rem !default;
+$icon-font-size-regular: 1rem !default;
+
+// Brand colors
+$brand-primary: $primary !default;
+
+// Social buttons colors
+$facebook: #3f5c99 !default;
+$facebook-states: darken($facebook, 5%) !default;
+$instagram: #df5495 !default;
+$instagram-states: lighten($instagram, 6%) !default;
+$google-plus: #f14b4b !default;
+$google-plus-states: lighten($google-plus, 10%) !default;
+$pinterest: #c9171d !default;
+$pinterest-states: lighten($pinterest, 10%) !default;
+$twitter: #55acee !default;
+$twitter-states: darken($twitter, 5%) !default;
+$linkedin: #0582c5 !default;
+$linkedin-states: darken($linkedin, 5%) !default;
+$youtube: #d42e29 !default;
+$youtube-states: lighten($youtube, 6%) !default;
+$tumblr: #35465c !default;
+$tumblr-states: lighten($tumblr, 6%) !default;
+$github: #333333 !default;
+$github-states: #ccc !default;
+$behance: #1769ff !default;
+$behance-states: lighten($behance, 6%) !default;
+$dribbble: #ec5a92 !default;
+$dribbble-states: lighten($dribbble, 6%) !default;
+$reddit: #ff4500 !default;
+$reddit-states: lighten($reddit, 6%) !default;
+
+// Cards
+$card-black-background: #27293d !default;
+$card-spacer-y: 1.25rem !default;

@@ -1,7 +1,8 @@
 import { Route, Switch } from "react-router-dom";
+import Buttons from "views/components/Buttons";
 import "./App.scss";
+import "./assets/scss/app.scss";
 import Sidebar from "./components/Sidebar";
-import Buttons from "./views/components/Buttons";
 import GridSystem from "./views/components/GridSystem";
 import Icons from "./views/components/Icons";
 import Notifications from "./views/components/Notifications";

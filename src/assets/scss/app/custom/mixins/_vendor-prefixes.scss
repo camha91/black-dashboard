@@ -1,0 +1,37 @@
+@mixin diagonal-gradient($start-color, $end-color) {
+  background: $start-color;
+  background-image: -webkit-linear-gradient(
+    to bottom left,
+    $start-color,
+    $end-color,
+    $start-color
+  );
+  background-image: -o-linear-gradient(
+    to bottom left,
+    $start-color,
+    $end-color,
+    $start-color
+  );
+  background-image: -moz-linear-gradient(
+    to bottom left,
+    $start-color,
+    $end-color,
+    $start-color
+  );
+  background-image: linear-gradient(
+    to bottom left,
+    $start-color,
+    $end-color,
+    $start-color
+  );
+  background-size: 210% 210%;
+  background-position: top right;
+}
+
+@mixin linear-gradient($color, $states-color) {
+  background: $color;
+  background: -webkit-linear-gradient(0deg, $color 0%, $states-color 100%);
+  background: -o-linear-gradient(0deg, $color 0%, $states-color 100%);
+  background: -moz-linear-gradient(0deg, $color 0%, $states-color 100%);
+  background: linear-gradient(0deg, $color 0%, $states-color 100%);
+}
