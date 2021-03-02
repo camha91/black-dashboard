@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, CardBody, Col, Row } from "reactstrap";
+import "../grid.scss";
 
 const GridSystem = () => {
   return (

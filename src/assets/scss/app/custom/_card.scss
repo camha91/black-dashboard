@@ -6,6 +6,10 @@
   margin-bottom: 40px;
   box-shadow: $box-shadow;
 
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+
   .card-title {
     margin-bottom: 0.75rem;
   }
