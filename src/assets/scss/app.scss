@@ -20,10 +20,18 @@
 @import "~bootstrap/scss/pagination";
 @import "~bootstrap/scss/transitions";
 @import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/code";
+@import "~bootstrap/scss/utilities";
 
 // Custom components
 @import "app/custom/buttons.scss";
 @import "app/custom/pagination.scss";
+@import "app/custom/type.scss";
+@import "app/custom/reboot.scss";
+@import "app/custom/grid.scss";
+@import "app/custom/utilities.scss";
 
 // Cards
 @import "app/custom/card";

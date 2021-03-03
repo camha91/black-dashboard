@@ -1,0 +1,7 @@
+.row.row-grid > [class*="col-"] + [class*="col-"] {
+  margin-top: 3rem;
+}
+
+.row-grid + .row-grid {
+  margin-top: 3rem;
+}

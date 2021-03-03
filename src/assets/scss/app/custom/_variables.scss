@@ -15,6 +15,8 @@ $info-states: #516bd4 !default;
 $warning-states: #d3c790 !default;
 $danger-states: #b8594e !default;
 
+$background-black: #1e1e2f !default;
+
 // Border
 $none: 0 !default;
 $border-thin: 1px !default;
@@ -23,7 +25,7 @@ $border-radius-lg: 0.4285rem !default;
 $border-radius-sm: 0.2857rem !default;
 $border: 0.5px solid !default;
 
-$box-shadow: 0 15px 35px rgba(80, 218, 195, 0.1), 0 5px 15px rgba(5, 5, 5, 0.07);
+$box-shadow: 0 15px 35px rgba(44, 44, 75, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
 
 // Buttons
 $btn-padding-y-sm: 5px !default;
@@ -35,6 +37,40 @@ $btn-padding-x-lg: 40px !default;
 $btn-round-radius: 25px !default;
 
 // Spacing
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge(
+  (
+    0: 0,
+    1: (
+      $spacer * 0.25,
+    ),
+    2: (
+      $spacer * 0.5,
+    ),
+    3: $spacer,
+    4: (
+      $spacer * 1.5,
+    ),
+    5: (
+      $spacer * 3,
+    ),
+    "sm": (
+      $spacer * 2,
+    ),
+    "md": (
+      $spacer * 4,
+    ),
+    "lg": (
+      $spacer * 6,
+    ),
+    "xl": (
+      $spacer * 8,
+    ),
+  ),
+  $spacers
+);
+
 $padding-btn-vertical: 8px !default;
 
 $padding-round-horizontal: 22px !default;
@@ -42,20 +78,42 @@ $padding-round-horizontal: 22px !default;
 $padding-base-vertical: 0.5rem !default;
 $padding-base-horizontal: 0.7rem !default;
 
+$margin-base-vertical: 15px !default;
+
 // Color system
 $transparent-bg: transparent !default;
 $white: #ffffff !default;
 $pink-100: #ebbbdf !default;
 $pink-600: #da50b0 !default;
 
-$opacity-1: rgba(255, 255, 255, 0.2) !default;
+$deep-pink: #cc2a83 !default;
+
+$opacity-8: rgba(38, 211, 125, 0.8) !default;
+
+$opacity-1: rgba(180, 214, 164, 0.1) !default;
 
 // Fonts
+$font-family-base: "Poppins", sans-serif !default;
+$font-family-alt: "Poppins", sans-serif !default;
+
 $font-size-dash: 0.875rem !default;
 
 $font-size-base: $font-size-dash !default;
 
+$h1-font-size: $font-size-base * 2.35714285 !default; //2.1875rem
+$h2-font-size: $font-size-base * 1.9285714 !default;
+$h3-font-size: $font-size-base * 1.642857 !default;
+$h4-font-size: $font-size-base * 1.2142857 !default;
+$h5-font-size: $font-size-base * 0.9285714 !default;
+$h6-font-size: $font-size-base * 0.8571428 !default;
+
 $font-weight-bold: 600 !default;
+$font-weight-normal: 400 !default;
+
+$headings-font-family: inherit !default;
+$headings-line-height: 1.2 !default;
+
+$display-line-height: $headings-line-height !default;
 
 // Icons
 $icon-size-regular: 2.375rem !default;
