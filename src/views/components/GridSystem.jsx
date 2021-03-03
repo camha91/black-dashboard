@@ -168,6 +168,150 @@ const GridSystem = () => {
             </Card>
           </Col>
         </Row>
+        <h4 className="title pl-3">
+          Offset Grid <small>Adding some space when needed</small>
+        </h4>
+        <Row>
+          <Col md="3">
+            <Card>
+              <CardBody className="text-center py-5">
+                <code>col-md-3</code>
+              </CardBody>
+            </Card>
+          </Col>
+          <Col className="ml-auto" md="3">
+            <Card>
+              <CardBody className="text-center py-5">
+                <code>col-md-3 ml-auto</code>
+              </CardBody>
+            </Card>
+          </Col>
+        </Row>
+        <Row>
+          <Col className="ml-auto mr-auto" md="4">
+            <Card>
+              <CardBody className="text-center py-5">
+                <code>col-md-4 ml-auto mr-auto</code>
+              </CardBody>
+            </Card>
+          </Col>
+          <Col className="ml-auto mr-auto" md="4">
+            <Card>
+              <CardBody className="text-center py-5">
+                <code>col-md-4 ml-auto mr-auto</code>
+              </CardBody>
+            </Card>
+          </Col>
+        </Row>
+        <Row>
+          <Col className="ml-auto mr-auto" md="6">
+            <Card>
+              <CardBody className="text-center py-5">
+                <code>col-md-6 ml-auto mr-auto</code>
+              </CardBody>
+            </Card>
+          </Col>
+        </Row>
+        <h3 className="title mt-5 text-center">Paragraphs</h3>
+        <CardBody>
+          <Row>
+            <Col sm="6">
+              <h3 className="mt-5">Some Title Here</h3>
+              <p>
+                One morning, when Gregor Samsa woke from troubled dreams, he
+                found himself transformed in his bed into a horrible vermin. He
+                lay on his armour-like back, and if he lifted his head a little
+                he could see his brown belly, slightly domed and divided by
+                arches into stiff sections. The bedding was hardly able to cover
+                it and seemed ready to slide off any moment. His many legs,
+                pitifully thin compared with the size of the rest of him, waved
+                about helplessly as he looked. "What's happened to me?" he
+                thought.
+              </p>
+            </Col>
+            <Col sm="6">
+              <h3 className="mt-5">Another Title Here</h3>
+              <p>
+                One morning, when Gregor Samsa woke from troubled dreams, he
+                found himself transformed in his bed into a horrible vermin. He
+                lay on his armour-like back, and if he lifted his head a little
+                he could see his brown belly, slightly domed and divided by
+                arches into stiff sections. The bedding was hardly able to cover
+                it and seemed ready to slide off any moment. His many legs,
+                pitifully thin compared with the size of the rest of him, waved
+                about helplessly as he looked. "What's happened to me?" he
+                thought.
+              </p>
+            </Col>
+          </Row>
+          <br />
+          <Row>
+            <Col sm="4">
+              <h3 className="mt-5">Some Title Here</h3>
+              <p>
+                One morning, when Gregor Samsa woke from troubled dreams, he
+                found himself transformed in his bed into a horrible vermin. He
+                lay on his armour-like back, and if he lifted his head a little
+                he could see his brown belly, slightly domed and divided by
+                arches into stiff sections. The bedding was hardly able to cover
+                it and seemed ready to slide off any moment.
+              </p>
+            </Col>
+            <Col sm="4">
+              <h3 className="mt-5">Another Title Here</h3>
+              <p>
+                One morning, when Gregor Samsa woke from troubled dreams, he
+                found himself transformed in his bed into a horrible vermin. He
+                lay on his armour-like back, and if he lifted his head a little
+                he could see his brown belly, slightly domed and divided by
+                arches into stiff sections. The bedding was hardly able to cover
+                it and seemed ready to slide off any moment.
+              </p>
+            </Col>
+            <Col sm="4">
+              <h3 className="mt-5">Another Title Here</h3>
+              <p>
+                One morning, when Gregor Samsa woke from troubled dreams, he
+                found himself transformed in his bed into a horrible vermin. He
+                lay on his armour-like back, and if he lifted his head a little
+                he could see his brown belly, slightly domed and divided by
+                arches into stiff sections. The bedding was hardly able to cover
+                it and seemed ready to slide off any moment.
+              </p>
+            </Col>
+          </Row>
+          <br />
+          <Row>
+            <Col sm="4">
+              <h3 className="mt-5">Some Title Here</h3>
+              <p>
+                One morning, when Gregor Samsa woke from troubled dreams, he
+                found himself transformed in his bed into a horrible vermin. He
+                lay on his armour-like back, and if he lifted his head a little
+                he could see his brown belly, slightly domed and divided by
+                arches into stiff sections. The bedding was hardly able to cover
+                it and seemed ready to slide off any moment.
+              </p>
+            </Col>
+            <Col sm="8">
+              <h3 className="mt-5">Another Title Here</h3>
+              <p>
+                One morning, when Gregor Samsa woke from troubled dreams, he
+                found himself transformed in his bed into a horrible vermin. He
+                lay on his armour-like back, and if he lifted his head a little
+                he could see his brown belly, slightly domed and divided by
+                arches into stiff sections. The bedding was hardly able to cover
+                it and seemed ready to slide off any moment. One morning, when
+                Gregor Samsa woke from troubled dreams, he found himself
+                transformed in his bed into a horrible vermin. He lay on his
+                armour-like back, and if he lifted his head a little he could
+                see his brown belly, slightly domed and divided by arches into
+                stiff sections. The bedding was hardly able to cover it and
+                seemed ready to slide off any moment.
+              </p>
+            </Col>
+          </Row>
+        </CardBody>
       </div>
     </>
   );

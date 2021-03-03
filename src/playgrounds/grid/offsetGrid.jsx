@@ -2,39 +2,50 @@ import React from "react";
 import { Card, CardBody, Col, Row } from "reactstrap";
 import "../grid.scss";
 
-const MixedGrid = () => {
+const OffsetGrid = () => {
   return (
     <>
       <div className="content">
         <h4 className="title pl-3">
-          Mixed Grid <small>Showing different sizes on different screens</small>
+          Offset Grid <small>Adding some space when needed</small>
         </h4>
         <Row>
-          <Col lg="3" sm="6">
+          <Col md="3">
             <Card>
               <CardBody className="text-center py-5">
-                <code>col-sm-6 col-lg-3</code>
+                <code>col-md-3</code>
               </CardBody>
             </Card>
           </Col>
-          <Col lg="3" sm="6">
+          <Col className="ml-auto" md="3">
             <Card>
               <CardBody className="text-center py-5">
-                <code>col-sm-6 col-lg-3</code>
+                <code>col-md-3 ml-auto</code>
               </CardBody>
             </Card>
           </Col>
-          <Col lg="3" sm="6">
+        </Row>
+        <Row>
+          <Col className="ml-auto mr-auto" md="4">
             <Card>
               <CardBody className="text-center py-5">
-                <code>col-sm-6 col-lg-3</code>
+                <code>col-md-4 ml-auto mr-auto</code>
               </CardBody>
             </Card>
           </Col>
-          <Col lg="3" sm="6">
+          <Col className="ml-auto mr-auto" md="4">
             <Card>
               <CardBody className="text-center py-5">
-                <code>col-sm-6 col-lg-3</code>
+                <code>col-md-4 ml-auto mr-auto</code>
+              </CardBody>
+            </Card>
+          </Col>
+        </Row>
+        <Row>
+          <Col className="ml-auto mr-auto" md="6">
+            <Card>
+              <CardBody className="text-center py-5">
+                <code>col-md-6 ml-auto mr-auto</code>
               </CardBody>
             </Card>
           </Col>
@@ -44,4 +55,4 @@ const MixedGrid = () => {
   );
 };
 
-export default MixedGrid;
+export default OffsetGrid;

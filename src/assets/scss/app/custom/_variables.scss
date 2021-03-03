@@ -15,6 +15,8 @@ $info-states: #516bd4 !default;
 $warning-states: #d3c790 !default;
 $danger-states: #b8594e !default;
 
+$background-black: #1e1e2f !default;
+
 // Border
 $none: 0 !default;
 $border-thin: 1px !default;
@@ -23,7 +25,7 @@ $border-radius-lg: 0.4285rem !default;
 $border-radius-sm: 0.2857rem !default;
 $border: 0.5px solid !default;
 
-$box-shadow: 0 15px 35px rgba(40, 40, 75, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+$box-shadow: 0 15px 35px rgba(44, 44, 75, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
 
 // Buttons
 $btn-padding-y-sm: 5px !default;
@@ -86,9 +88,9 @@ $pink-600: #da50b0 !default;
 
 $deep-pink: #cc2a83 !default;
 
-$opacity-8: rgba(38, 211, 125, 0.671) !default;
+$opacity-8: rgba(38, 211, 125, 0.8) !default;
 
-$opacity-1: rgba(133, 177, 107, 0.1) !default;
+$opacity-1: rgba(180, 214, 164, 0.1) !default;
 
 // Fonts
 $font-family-base: "Poppins", sans-serif !default;

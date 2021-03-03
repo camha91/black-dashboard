@@ -19,11 +19,22 @@ h6 {
   color: $opacity-8;
 }
 
+h3,
+.h3 {
+  margin-bottom: $margin-base-vertical * 2;
+  line-height: 1.4em;
+}
+
 h4,
 .h4 {
   line-height: 1.45em;
   margin-bottom: $margin-base-vertical;
   font-size: $h4-font-size;
+}
+
+p {
+  color: $pink-100;
+  margin-bottom: 5px;
 }
 
 .title {

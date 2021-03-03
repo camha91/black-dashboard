@@ -1,7 +1,10 @@
 // variables.scss
 
+// Gradient
+$background-black: #1e1e2f !default;
+
 // Border
-$box-shadow: 0 15px 35px rgba(40, 40, 75, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+$box-shadow: 0 15px 35px rgba(44, 44, 75, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
 
 $border-radius-sm: 0.2857rem !default;
 
@@ -15,7 +18,8 @@ $white: #ffffff !default;
 $deep-pink: #cc2a83 !default;
 
 // opacity
-$opacity-8: rgba(38, 211, 125, 0.671) !default;
+$opacity-8: rgba(38, 211, 125, 0.8) !default;
+$opacity-1: rgba(180, 214, 164, 0.1) !default;
 
 // fonts
 $font-family-base: "Poppins", sans-serif !default;
@@ -76,9 +80,9 @@ body {
   font-size: $font-size-dash;
   font-weight: $font-weight-normal;
   line-height: $display-line-height;
-  color: $pink-100;
+  color: $opacity-1;
   text-align: left;
-  background-color: $card-black-background;
+  background-color: $background-black;
 }
 
 h1,
@@ -111,6 +115,11 @@ h6 {
   font-weight: $font-weight-normal;
   color: $opacity-8;
 }
+h3,
+.h3 {
+  margin-bottom: $margin-base-vertical * 2;
+  line-height: 1.4em;
+}
 
 h4,
 .h4 {
@@ -119,10 +128,16 @@ h4,
   font-size: $h4-font-size;
 }
 
+p {
+  color: $pink-100;
+  margin-bottom: 5px;
+}
+
 .title {
   font-weight: $font-weight-bold;
 }
 
+// sidebar and main panel.scss
 .content {
   padding: 80px 30px 30px 280px;
   min-height: calc(100vh - 70px);

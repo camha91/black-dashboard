@@ -9,7 +9,7 @@ import Notifications from "./views/components/Notifications";
 import Panels from "./views/components/Panels";
 import SweetAlert from "./views/components/SweetAlert";
 import Typography from "./views/components/Typography";
-import mixedGrid from "./playgrounds/grid/mixedGrid";
+import paragraphs from "./playgrounds/grid/paragraphs";
 
 function App() {
   return (
