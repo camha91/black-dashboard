@@ -9,14 +9,14 @@ import Notifications from "./views/components/Notifications";
 import Panels from "./views/components/Panels";
 import SweetAlert from "./views/components/SweetAlert";
 import Typography from "./views/components/Typography";
-import gridSide from "./playgrounds/grid/gridSize";
+import mixedGrid from "./playgrounds/grid/mixedGrid";
 
 function App() {
   return (
     <div className="app">
       <Switch>
         <Route path="/buttons" component={Buttons} />
-        <Route path="/grid-system" component={gridSide} />
+        <Route path="/grid-system" component={GridSystem} />
         <Route path="/panels" component={Panels} />
         <Route path="/sweet-alert" component={SweetAlert} />
         <Route path="/notifications" component={Notifications} />

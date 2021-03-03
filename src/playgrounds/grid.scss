@@ -1,7 +1,7 @@
 // variables.scss
 
 // Border
-$box-shadow: 0 15px 35px rgba(80, 218, 195, 0.1), 0 5px 15px rgba(5, 5, 5, 0.07);
+$box-shadow: 0 15px 35px rgba(40, 40, 75, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
 
 $border-radius-sm: 0.2857rem !default;
 
@@ -12,9 +12,10 @@ $card-spacer-y: 1.25rem !default;
 // color system
 $pink-100: #ebbbdf !default;
 $white: #ffffff !default;
+$deep-pink: #cc2a83 !default;
 
 // opacity
-$opacity-8: rgba(28, 134, 64, 0.671) !default;
+$opacity-8: rgba(38, 211, 125, 0.671) !default;
 
 // fonts
 $font-family-base: "Poppins", sans-serif !default;
@@ -63,6 +64,12 @@ $spacer: 1rem !default;
 }
 
 // reboot.scss
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: $font-family-base;
@@ -83,7 +90,8 @@ h6 {
   margin-top: 0;
 }
 
-type.scss .card {
+//type.scss
+.card {
   h1,
   h2,
   h3,
@@ -115,10 +123,10 @@ h4,
   font-weight: $font-weight-bold;
 }
 
-// .content {
-//   padding: 80px 30px 30px 280px;
-//   min-height: calc(100vh - 70px);
-// }
+.content {
+  padding: 80px 30px 30px 280px;
+  min-height: calc(100vh - 70px);
+}
 
 // Spacing
 .row.row-grid > [class*="col-"] + [class*="col-"] {
@@ -129,25 +137,6 @@ h4,
   margin-top: 3rem;
 }
 
-.pb-5,
-.py-5 {
-  padding-bottom: $spacer * 3 !important;
-}
-
-.pt-5,
-.py-5 {
-  padding-top: $spacer * 3 !important;
-}
-
-.pl-3,
-.px-3 {
-  padding-left: $spacer;
-}
-
-// grid.scss
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+code {
+  color: $deep-pink;
 }
