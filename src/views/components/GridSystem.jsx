@@ -218,29 +218,27 @@ const GridSystem = () => {
             <Col sm="6">
               <h3 className="mt-5">Some Title Here</h3>
               <p>
-                One morning, when Gregor Samsa woke from troubled dreams, he
-                found himself transformed in his bed into a horrible vermin. He
-                lay on his armour-like back, and if he lifted his head a little
-                he could see his brown belly, slightly domed and divided by
-                arches into stiff sections. The bedding was hardly able to cover
-                it and seemed ready to slide off any moment. His many legs,
-                pitifully thin compared with the size of the rest of him, waved
-                about helplessly as he looked. "What's happened to me?" he
-                thought.
+                October arrived, spreading a damp chill over the grounds and
+                into the castle. Madam Pomfrey, the nurse, was kept busy by a
+                sudden spate of colds among the staff and students. Her Pepperup
+                potion worked instantly, though it left the drinker smoking at
+                the ears for several hours afterward. Ginny Weasley, who had
+                been looking pale, was bullied into taking some by Percy. The
+                steam pouring from under her vivid hair gave the impression that
+                her whole head was on fire.
               </p>
             </Col>
             <Col sm="6">
               <h3 className="mt-5">Another Title Here</h3>
               <p>
-                One morning, when Gregor Samsa woke from troubled dreams, he
-                found himself transformed in his bed into a horrible vermin. He
-                lay on his armour-like back, and if he lifted his head a little
-                he could see his brown belly, slightly domed and divided by
-                arches into stiff sections. The bedding was hardly able to cover
-                it and seemed ready to slide off any moment. His many legs,
-                pitifully thin compared with the size of the rest of him, waved
-                about helplessly as he looked. "What's happened to me?" he
-                thought.
+                October arrived, spreading a damp chill over the grounds and
+                into the castle. Madam Pomfrey, the nurse, was kept busy by a
+                sudden spate of colds among the staff and students. Her Pepperup
+                potion worked instantly, though it left the drinker smoking at
+                the ears for several hours afterward. Ginny Weasley, who had
+                been looking pale, was bullied into taking some by Percy. The
+                steam pouring from under her vivid hair gave the impression that
+                her whole head was on fire.
               </p>
             </Col>
           </Row>
@@ -249,34 +247,40 @@ const GridSystem = () => {
             <Col sm="4">
               <h3 className="mt-5">Some Title Here</h3>
               <p>
-                One morning, when Gregor Samsa woke from troubled dreams, he
-                found himself transformed in his bed into a horrible vermin. He
-                lay on his armour-like back, and if he lifted his head a little
-                he could see his brown belly, slightly domed and divided by
-                arches into stiff sections. The bedding was hardly able to cover
-                it and seemed ready to slide off any moment.
+                October arrived, spreading a damp chill over the grounds and
+                into the castle. Madam Pomfrey, the nurse, was kept busy by a
+                sudden spate of colds among the staff and students. Her Pepperup
+                potion worked instantly, though it left the drinker smoking at
+                the ears for several hours afterward. Ginny Weasley, who had
+                been looking pale, was bullied into taking some by Percy. The
+                steam pouring from under her vivid hair gave the impression that
+                her whole head was on fire.
               </p>
             </Col>
             <Col sm="4">
               <h3 className="mt-5">Another Title Here</h3>
               <p>
-                One morning, when Gregor Samsa woke from troubled dreams, he
-                found himself transformed in his bed into a horrible vermin. He
-                lay on his armour-like back, and if he lifted his head a little
-                he could see his brown belly, slightly domed and divided by
-                arches into stiff sections. The bedding was hardly able to cover
-                it and seemed ready to slide off any moment.
+                October arrived, spreading a damp chill over the grounds and
+                into the castle. Madam Pomfrey, the nurse, was kept busy by a
+                sudden spate of colds among the staff and students. Her Pepperup
+                potion worked instantly, though it left the drinker smoking at
+                the ears for several hours afterward. Ginny Weasley, who had
+                been looking pale, was bullied into taking some by Percy. The
+                steam pouring from under her vivid hair gave the impression that
+                her whole head was on fire.
               </p>
             </Col>
             <Col sm="4">
               <h3 className="mt-5">Another Title Here</h3>
               <p>
-                One morning, when Gregor Samsa woke from troubled dreams, he
-                found himself transformed in his bed into a horrible vermin. He
-                lay on his armour-like back, and if he lifted his head a little
-                he could see his brown belly, slightly domed and divided by
-                arches into stiff sections. The bedding was hardly able to cover
-                it and seemed ready to slide off any moment.
+                October arrived, spreading a damp chill over the grounds and
+                into the castle. Madam Pomfrey, the nurse, was kept busy by a
+                sudden spate of colds among the staff and students. Her Pepperup
+                potion worked instantly, though it left the drinker smoking at
+                the ears for several hours afterward. Ginny Weasley, who had
+                been looking pale, was bullied into taking some by Percy. The
+                steam pouring from under her vivid hair gave the impression that
+                her whole head was on fire.
               </p>
             </Col>
           </Row>
@@ -285,29 +289,27 @@ const GridSystem = () => {
             <Col sm="4">
               <h3 className="mt-5">Some Title Here</h3>
               <p>
-                One morning, when Gregor Samsa woke from troubled dreams, he
-                found himself transformed in his bed into a horrible vermin. He
-                lay on his armour-like back, and if he lifted his head a little
-                he could see his brown belly, slightly domed and divided by
-                arches into stiff sections. The bedding was hardly able to cover
-                it and seemed ready to slide off any moment.
+                October arrived, spreading a damp chill over the grounds and
+                into the castle. Madam Pomfrey, the nurse, was kept busy by a
+                sudden spate of colds among the staff and students. Her Pepperup
+                potion worked instantly, though it left the drinker smoking at
+                the ears for several hours afterward. Ginny Weasley, who had
+                been looking pale, was bullied into taking some by Percy. The
+                steam pouring from under her vivid hair gave the impression that
+                her whole head was on fire.
               </p>
             </Col>
             <Col sm="8">
               <h3 className="mt-5">Another Title Here</h3>
               <p>
-                One morning, when Gregor Samsa woke from troubled dreams, he
-                found himself transformed in his bed into a horrible vermin. He
-                lay on his armour-like back, and if he lifted his head a little
-                he could see his brown belly, slightly domed and divided by
-                arches into stiff sections. The bedding was hardly able to cover
-                it and seemed ready to slide off any moment. One morning, when
-                Gregor Samsa woke from troubled dreams, he found himself
-                transformed in his bed into a horrible vermin. He lay on his
-                armour-like back, and if he lifted his head a little he could
-                see his brown belly, slightly domed and divided by arches into
-                stiff sections. The bedding was hardly able to cover it and
-                seemed ready to slide off any moment.
+                October arrived, spreading a damp chill over the grounds and
+                into the castle. Madam Pomfrey, the nurse, was kept busy by a
+                sudden spate of colds among the staff and students. Her Pepperup
+                potion worked instantly, though it left the drinker smoking at
+                the ears for several hours afterward. Ginny Weasley, who had
+                been looking pale, was bullied into taking some by Percy. The
+                steam pouring from under her vivid hair gave the impression that
+                her whole head was on fire.
               </p>
             </Col>
           </Row>
