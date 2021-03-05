@@ -23,3 +23,10 @@ h6 {
 *::after {
   box-sizing: border-box;
 }
+
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}

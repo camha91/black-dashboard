@@ -14,6 +14,7 @@
 
 // Bootstrap components
 
+@import "~bootstrap/scss/root";
 @import "~bootstrap/scss/buttons";
 @import "~bootstrap/scss/button-group";
 @import "~bootstrap/scss/card";
@@ -24,6 +25,7 @@
 @import "~bootstrap/scss/type";
 @import "~bootstrap/scss/code";
 @import "~bootstrap/scss/utilities";
+@import "~bootstrap/scss/reboot";
 
 // Custom components
 @import "app/custom/buttons.scss";
@@ -32,6 +34,9 @@
 @import "app/custom/reboot.scss";
 @import "app/custom/grid.scss";
 @import "app/custom/utilities.scss";
+@import "app/custom/pills.scss";
+@import "app/custom/misc.scss";
+@import "app/custom/nav.scss";
 
 // Cards
 @import "app/custom/card";

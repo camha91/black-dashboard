@@ -31,12 +31,34 @@ h4,
   margin-bottom: $margin-base-vertical;
   font-size: $h4-font-size;
 }
+h5,
+.h5 {
+  line-height: 1.4em;
+  margin-bottom: 15px;
+}
 
 p {
   color: $pink-100;
   margin-bottom: 5px;
 }
 
+ul li,
+ol li {
+  color: $white;
+}
+
 .title {
   font-weight: $font-weight-bold;
+}
+
+.category,
+.card-category {
+  text-transform: capitalize;
+  font-weight: $font-weight-normal;
+  color: rgba($white, 0.6);
+  font-size: $font-size-sm;
+}
+
+.card-category {
+  font-size: $font-size-sm;
 }

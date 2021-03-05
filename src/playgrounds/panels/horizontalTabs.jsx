@@ -12,6 +12,7 @@ import {
   TabContent,
   TabPane,
 } from "reactstrap";
+import '../panels.scss';
 
 const HorizontalTabs = (props) => {
   const [horizontalTabs, setHorizontalTabs] = useState("profile");
@@ -37,7 +38,7 @@ const HorizontalTabs = (props) => {
               <CardTitle tag="h3">Horizontal Tabs</CardTitle>
             </CardHeader>
             <CardBody>
-              <Nav className="nav-pills-info">
+              <Nav className="nav-pills-info" pills>
                 <NavItem>
                   <NavLink
                     data-toggle="tab"

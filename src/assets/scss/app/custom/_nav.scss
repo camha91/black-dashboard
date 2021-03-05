@@ -1,0 +1,29 @@
+.nav-link {
+  color: $nav-link-color;
+
+  &:hover {
+    color: theme-color("primary");
+  }
+}
+
+// Pills
+
+.nav-pills {
+  .nav-link {
+    padding: $nav-pills-padding-y $nav-pills-padding-x;
+    color: $nav-pills-link-color;
+    font-weight: 500;
+    background-color: $nav-pills-bg;
+    transition: $transition-base;
+
+    &:hover {
+      color: $nav-pills-link-hover-color;
+    }
+  }
+
+  .nav-link.active,
+  .show > .nav-link {
+    color: $nav-pills-link-active-color;
+    background-color: $nav-pills-link-active-bg;
+  }
+}

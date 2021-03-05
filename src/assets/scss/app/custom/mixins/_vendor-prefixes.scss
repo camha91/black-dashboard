@@ -35,3 +35,11 @@
   background: -moz-linear-gradient(0deg, $color 0%, $states-color 100%);
   background: linear-gradient(0deg, $color 0%, $states-color 100%);
 }
+
+@mixin transitions($time, $type) {
+  -webkit-transition: all $time $type;
+  -moz-transition: all $time $type;
+  -o-transition: all $time $type;
+  -ms-transition: all $time $type;
+  transition: all $time $type;
+}

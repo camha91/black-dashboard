@@ -1,0 +1,362 @@
+// mixins
+@mixin diagonal-gradient($start-color, $end-color) {
+  background: $start-color;
+  background-image: -webkit-linear-gradient(
+    to bottom left,
+    $start-color,
+    $end-color,
+    $start-color
+  );
+  background-image: -o-linear-gradient(
+    to bottom left,
+    $start-color,
+    $end-color,
+    $start-color
+  );
+  background-image: -moz-linear-gradient(
+    to bottom left,
+    $start-color,
+    $end-color,
+    $start-color
+  );
+  background-image: linear-gradient(
+    to bottom left,
+    $start-color,
+    $end-color,
+    $start-color
+  );
+  background-size: 210% 210%;
+  background-position: top right;
+}
+
+// vendor_prefixes.scss
+@mixin transitions($time, $type) {
+  -webkit-transition: all $time $type;
+  -moz-transition: all $time $type;
+  -o-transition: all $time $type;
+  -ms-transition: all $time $type;
+  transition: all $time $type;
+}
+
+// variable.scss
+
+// fonts
+$font-weight-normal: 400 !default;
+
+$font-size-dash: 0.875rem !default;
+
+$font-size-base: $font-size-dash !default;
+$font-size-xl: ($font-size-base * 1.428);
+$font-size-lg: ($font-size-base * 1.142);
+$font-size-sm: ($font-size-base * 0.85714286);
+$font-size-xs: ($font-size-base * 0.714);
+
+$default: #3e4d72 !default;
+$primary: #1c2d8f !default;
+$secondary: #df60ce !default;
+$success: #1b7e0e !default;
+$info: #1a74ce !default;
+$warning: #d8bc40 !default;
+$danger: #ce2626 !default;
+
+// color system
+$white: #ffffff !default;
+$black: #131827 !default;
+$pink-100: #cea3c1 !default;
+$pink-200: #d490c0 !default;
+$pink-300: #cf8cbb !default;
+$pink-400: #be5ea2 !default;
+$pink-500: #b64c96 !default;
+$pink-600: #b83f94 !default;
+$pink-700: #aa3085 !default;
+$pink-800: #a01376 !default;
+$pink-900: #97016a !default;
+
+$dark: $pink-900 !default;
+$darker: darken($pink-900, 15%) !default;
+
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    "default": $default,
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "white": $white,
+    "neutral": $white,
+    "dark": $dark,
+    "darker": $darker,
+  ),
+  $theme-colors
+);
+
+$pink: () !default;
+$pink: map-merge(
+  (
+    "100": $pink-100,
+    "200": $pink-200,
+    "300": $pink-300,
+    "400": $pink-400,
+    "500": $pink-500,
+    "600": $pink-600,
+    "700": $pink-700,
+    "800": $pink-800,
+    "900": $pink-900,
+  ),
+  $pink
+);
+
+$blue: #5066dd !default;
+$indigo: #6004c2 !default;
+$purple: #8e6bdf !default;
+$gray: #5c5b5b !default;
+$red: #f52952 !default;
+$orange: #f35936 !default;
+$yellow: #f8d10b !default;
+$green: #21cc82 !default;
+$teal: #18d1f1 !default;
+$cyan: #34fac5 !default;
+
+$colors: () !default;
+$colors: map-merge(
+  (
+    "blue": $blue,
+    "indigo": $indigo,
+    "purple": $purple,
+    "gray": $gray,
+    "red": $red,
+    "orange": $orange,
+    "yellow": $yellow,
+    "green": $green,
+    "teal": $teal,
+    "cyan": $cyan,
+    "white": $white,
+    "pink": $pink-600,
+    "light": $pink-400,
+    "lighter": $pink-200,
+    "pink-dark": $pink-800,
+  ),
+  $colors
+);
+
+$opacity-2: rgba(63, 114, 40, 0.2) !default;
+
+// opacity
+$dark-red: #960303 !default;
+
+$dark: $pink-900 !default;
+$darker: darken($pink-900, 15%) !default;
+
+// buttons
+$btn-round-radius: 30px !default;
+
+// spacing
+$padding-btn-vertical: 8px !default;
+$padding-round-horizontal: 22px !default;
+
+// gradient
+$primary-states: #549ff5 !default;
+$info-states: #516bd4 !default;
+
+// transition
+$transition-ease: ease 0s;
+$transition-base: all 0.15s ease !default;
+
+$general-transition-time: 300ms !default;
+
+// Navs
+$nav-link-color: $pink-700 !default;
+
+$nav-pills-padding-y: 0.75rem !default;
+$nav-pills-padding-x: 1rem !default;
+
+$nav-pills-link-color: theme-color("primary") !default;
+$nav-pills-link-hover-color: darken(theme-color("primary"), 5%);
+
+$nav-pills-bg: $white;
+
+// card.scss
+
+.card-category {
+  color: $dark-red;
+  margin-bottom: 5px;
+  font-weight: 300;
+}
+
+// type.scss
+h5,
+.h5 {
+  line-height: 1.4em;
+  margin-bottom: 15px;
+}
+
+.category,
+.card-category {
+  text-transform: capitalize;
+  font-weight: $font-weight-normal;
+  color: rgba($white, 0.6);
+  font-size: $font-size-sm;
+}
+
+ul li,
+ol li {
+  color: $white;
+}
+
+.card-category {
+  font-size: $font-size-sm;
+}
+
+// reboot.scss
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+// pills.scss
+.nav-pills {
+  &.flex-column li > a {
+    margin-bottom: 15px;
+  }
+
+  &.nav-pills:not(.flex-column) .nav-item:not(:last-child) .nav-link {
+    margin-right: 10px;
+    margin-bottom: 5px;
+  }
+
+  &:not(.nav-pills-icons):not(.nav-pills-just-icons) .nav-item .nav-link {
+    border-radius: $btn-round-radius;
+  }
+
+  &.nav-pills-just-icons .nav-item .nav-link {
+    border-radius: 50%;
+    height: 80px;
+    max-width: 80px;
+    min-width: auto;
+    padding: 0;
+    width: 80px;
+  }
+
+  .nav-item {
+    .nav-link {
+      padding: 0 15.5px;
+      text-align: center;
+      padding: $padding-btn-vertical $padding-round-horizontal;
+      min-width: 100px;
+      font-weight: $font-weight-normal;
+      color: rgba($white, 0.5);
+      background-color: darken($black, 5%);
+
+      &:hover {
+        background-color: darken($black, 10%);
+      }
+
+      &.active {
+        &,
+        &:focus,
+        &:hover {
+          background-color: $dark-red;
+          color: $white;
+          box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+        }
+      }
+
+      &.disabled,
+      &:disabled,
+      &[disabled] {
+        opacity: 0.5;
+      }
+    }
+
+    i {
+      display: block;
+      font-size: 24px;
+      line-height: 60px;
+    }
+  }
+
+  &.nav-pills-neutral {
+    .nav-item {
+      .nav-link {
+        background-color: $opacity-2;
+        color: $white;
+
+        &.active {
+          &,
+          &:focus,
+          &:hover {
+            background-color: $white;
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+
+  &.nav-pills-primary {
+    .nav-item {
+      .nav-link.active {
+        &,
+        &:focus,
+        &:hover {
+          @include diagonal-gradient($primary, $primary-states);
+        }
+      }
+    }
+  }
+
+  &.nav-pills-info {
+    .nav-item {
+      .nav-link.active {
+        &,
+        &:focus,
+        &:hover {
+          @include diagonal-gradient($info, $info-states);
+        }
+      }
+    }
+  }
+}
+
+// misc.scss
+.nav-pills .nav-link,
+.navbar,
+.nav-tabs .nav-link {
+  @include transitions($general-transition-time, $transition-ease);
+}
+
+// nav.scss
+.nav-link {
+  color: $nav-link-color;
+
+  &:hover {
+    color: theme-color("primary");
+  }
+}
+
+// Pills
+
+.nav-pills {
+  .nav-link {
+    padding: $nav-pills-padding-y $nav-pills-padding-x;
+    color: $nav-pills-link-color;
+    font-weight: 500;
+    background-color: $nav-pills-bg;
+    transition: $transition-base;
+
+    &:hover {
+      color: $nav-pills-link-hover-color;
+    }
+  }
+
+  .nav-link.active,
+  .show > .nav-link {
+    color: $nav-pills-link-active-color;
+    background-color: $nav-pills-link-active-bg;
+  }
+}

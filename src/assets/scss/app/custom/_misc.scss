@@ -1,3 +1,9 @@
+.nav-pills .nav-link,
+.navbar,
+.nav-tabs .nav-link {
+  @include transitions($general-transition-time, $transition-ease);
+}
+
 code {
   color: $pink;
 }

@@ -1,0 +1,23 @@
+.nav-pills {
+  &.flex-column li > a {
+    margin-bottom: 15px;
+  }
+
+  &.nav-pills:not(.flex-column) .nav-item:not(:last-child) .nav-link {
+    margin-right: 10px;
+    margin-bottom: 5px;
+  }
+
+  &:not(.nav-pills-icons):not(.nav-pills-just-icons) .nav-item .nav-link {
+    border-radius: $btn-round-radius;
+  }
+
+  &.nav-pills-just-icons .nav-item .nav-link {
+    border-radius: 50%;
+    height: 80px;
+    max-width: 80px;
+    min-width: auto;
+    padding: 0;
+    width: 80px;
+  }
+}
